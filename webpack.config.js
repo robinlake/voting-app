@@ -10,7 +10,8 @@ module.exports = {
   },
   devServer: {
   contentBase: "./client",
-  hot: true
+  hot: true,
+  historyApiFallback: true
   },
   module: {
     loaders: [{
