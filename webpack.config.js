@@ -14,20 +14,17 @@ module.exports = {
   historyApiFallback: true
   },
   module: {
-    loaders: [{
+    rules: [{
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+    },
+    {
       test: /.jsx?$/,
       loader: 'babel-loader',
       exclude: /node_modules/,
       query: {
         presets: ['es2015', 'react']
       }
-    },
-    {
-      rules: [{
-          test: /\.css$/,
-          use: [ 'style-loader', 'css-loader' ]
-      }]
-    }
-    ]
+    }]
   }
 }

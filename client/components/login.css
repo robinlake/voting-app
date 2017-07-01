@@ -153,6 +153,7 @@ button:active {
 
 .nav {
   display: flex;
+  text-align: center;
 }
 
 .active{

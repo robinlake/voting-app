@@ -2,11 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 //import {Router, Route, Link, hashHistory} from 'react-router'
 var ReactRouter = require('react-router-dom')
-import Login from './components/login.js'
 import Header from './components/header.js'
 var Router = ReactRouter.BrowserRouter
 var Route = ReactRouter.Route
 var Switch = ReactRouter.Switch
+var browserHistory = ReactRouter.browserHistory
 var Navbar = require('./components/navbar')
 var Home = require('./components/home')
 var MyPolls = require('./components/mypolls')
@@ -18,12 +18,13 @@ class App extends React.Component {
   render(){
     return(
       <div>
-        <Router>
+        <Router history={browserHistory} >
           <div>
+            <Navbar />
             <Switch>
-              <Route exact path="/" component={Login}></Route>
-              <Route path="/home" component={Home}></Route>
+              <Route exact path="/" component={Home} />
               <Route path="/mypolls" component={MyPolls}></Route>
+              <Route path={"/home"} component={Home}></Route>
               <Route path="/allpolls" component={AllPolls}></Route>
               <Route path="/signin" component={SignIn}></Route>
             </Switch>
