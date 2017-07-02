@@ -7,7 +7,6 @@ class AllPolls extends React.Component {
     return (
       <div className='home-container'>
         <h1>All polls page</h1>
-        <Link className='button' to='/battle'>Battle</Link>
       </div>
     )
   }

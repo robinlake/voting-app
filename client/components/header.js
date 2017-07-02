@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export class Header extends React.Component {
+class Header extends React.Component {
   render(){
     return(
       <h1 className="header"> Custom Polls App </h1>
     )
   }
 }
+
+module.exports = Header;
