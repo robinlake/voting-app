@@ -30,6 +30,11 @@ function Navbar() {
           sign in
         </NavLink>
       </li>
+      <li>
+        <NavLink activeClassName='active' to='/newpoll'>
+          new poll
+        </NavLink>
+      </li>
     </ul>
   )
 }

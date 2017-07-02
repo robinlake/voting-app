@@ -10,6 +10,7 @@ class SignIn extends React.Component {
         <h1>Sign in to create polls</h1>
         {/*<Login />*/}
         <MyPolls />
+        <button>Click here to log in </button>
       </div>
     )
   }

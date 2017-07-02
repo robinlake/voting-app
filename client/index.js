@@ -11,7 +11,10 @@ var Navbar = require('./components/navbar')
 var Home = require('./components/home')
 var MyPolls = require('./components/mypolls')
 var AllPolls = require('./components/allpolls')
+var NewPoll = require('./components/newpoll')
 var SignIn = require('./components/signin')
+var About = require('./components/about')
+
 import { Provider } from 'react-redux';
 import store, { history } from './store'
 
@@ -30,6 +33,9 @@ class App extends React.Component {
                 <Route path={"/home"} component={Home}></Route>
                 <Route path="/allpolls" component={AllPolls}></Route>
                 <Route path="/signin" component={SignIn}></Route>
+                <Route path="/newpoll" component={NewPoll}></Route>
+                <Route path="/about" component={About}></Route>
+
               </Switch>
             </div>
           </Router>

@@ -1,17 +1,17 @@
 import { createStore, compose } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
-//import { browserHistory } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-
 // import the root reducer
-
 import rootReducer from './reducers/index';
 
-// create an object for the default data
-// const defaultState = {
-// }
+import polls from './data/polls'
 
-const store = createStore(rootReducer);
+//create an object for the default data
+const defaultState = {
+  polls
+}
+
+const store = createStore(rootReducer, defaultState);
 
 //export const history = syncHistoryWithStore(browserHistory, store);
 export const history = syncHistoryWithStore(createBrowserHistory(), store);
