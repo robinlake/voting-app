@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
+    "nodemon": "nodemon server/server.js",
     "hot": "webpack-dev-server --hot --history-api-fallback"
   },
   "repository": {
@@ -20,8 +21,13 @@
   "homepage": "https://github.com/robinlake/voting-app#readme",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "body-parser": "^1.17.2",
     "css-loader": "^0.28.4",
     "express": "^4.15.3",
+    "mongodb": "^2.2.29",
+    "mongoose": "^4.11.1",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",

@@ -8,7 +8,7 @@ import polls from './data/polls'
 
 //create an object for the default data
 const defaultState = {
-  polls
+
 }
 
 const store = createStore(rootReducer, defaultState);

@@ -1,19 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 //import {Router, Route, Link, hashHistory} from 'react-router'
-var ReactRouter = require('react-router-dom');
-var Header = require('./components/header');
-var Router = ReactRouter.BrowserRouter;
-var Route = ReactRouter.Route;
-var Switch = ReactRouter.Switch;
+var ReactRouter = require('react-router-dom')
+var Header = require('./components/header')
+var Router = ReactRouter.BrowserRouter
+var Route = ReactRouter.Route
+var Switch = ReactRouter.Switch
 import { createBrowserHistory } from 'history';
-var Navbar = require('./components/navbar');
-var Home = require('./components/home');
-var MyPolls = require('./components/mypolls');
-var AllPolls = require('./components/allpolls');
-var NewPoll = require('./components/newpoll');
-var SignIn = require('./components/signin');
-var About = require('./components/about');
+var Navbar = require('./components/navbar')
+var Home = require('./components/home')
+var MyPolls = require('./components/mypolls')
+var AllPolls = require('./components/allpolls')
+var NewPoll = require('./components/newpoll')
+var SignIn = require('./components/signin')
+var About = require('./components/about')
 
 import { Provider } from 'react-redux';
 import store, { history } from './store'
@@ -45,4 +45,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+React.render(<App />, document.getElementById('root'))

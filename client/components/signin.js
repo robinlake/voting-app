@@ -11,6 +11,19 @@ class SignIn extends React.Component {
         {/*<Login />*/}
         <MyPolls />
         <button>Click here to log in </button>
+        <h1>Don't have an account? Sign up</h1>
+        Validation
+        <form action="" method="post">
+          <div className="form-group">
+            <label htmlFor="email">E-Mail</label>
+            <input type="text" id="email" name="email" class="form-control"/>
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <input type="passwword" id="password" name="password" className="form-control"/>
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
       </div>
     )
   }
